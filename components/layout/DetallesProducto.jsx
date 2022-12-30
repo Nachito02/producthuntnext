@@ -130,7 +130,7 @@ const DetallesProducto = ( {producto} ) => {
             </DescripcionProducto>
 
             <Votos>
-                <div> &#9650;</div>
+                <div>&#9650;</div>
                 <p>{votos}</p>
             </Votos>
         </Producto>

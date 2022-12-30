@@ -159,7 +159,7 @@ const NuevoProducto = () => {
 
 
       <Campo>
-        <label htmlFor="imagen">Product's imagen</label>
+        <label htmlFor="imagen">Products imagen</label>
         <input
           accept="imagen/*"
           onChange={handleChange}
