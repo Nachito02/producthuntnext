@@ -45,7 +45,7 @@ export const InputSubmit = styled.input`
     font-size: 1.8rem;
     text-transform: uppercase;
     font-family : 'PT Sans', sans-serif;
-
+    border:none;
     &:hover {
        cursor:pointer; 
     }

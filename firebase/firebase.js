@@ -1,13 +1,19 @@
 import { initializeApp } from "firebase/app";
 import {createUserWithEmailAndPassword, getAuth, updateProfile, signInWithEmailAndPassword, signOut} from 'firebase/auth'
 import firebaseConfig from './config'
+import {getStorage} from 'firebase/storage'
+
+import { getFirestore,collection } from "firebase/firestore";
+
 
 
 class Firebase {
         constructor() {
-            initializeApp(firebaseConfig)
+           const app = initializeApp(firebaseConfig)
 
             this.auth = getAuth();
+            this.db = getFirestore(app)
+            this.storage = getStorage(app, 'gs://produc-thunt.appspot.com')
         }
 
         //registrar un usuario
